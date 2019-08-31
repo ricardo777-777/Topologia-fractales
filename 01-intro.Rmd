@@ -14,59 +14,27 @@ output:
 
 ## Iteración de funciones complejas
 
-Sea $f$ : $X\rightarrow X$ una función continua en un espacio métrico
-$X$. Para $k\in\N$, la $k$ – ésima iteración de $f$ se define
+Se define
 como la composición reiterada de $f$ consigo misma $k$ veces y la
-denotamos por $f^{k}$ Por ejemplo, $f^{2}=f\circ f,f^{3}=f\circ f\circ f$
-y en general 
-\[
-f^{k+1}=f\circ f^{k}.
-\]
-Se entiende que $f^{1}=f$ y definimos $f^{0}=id.$ Para $x\in X$
-definimos la órbita de $x$ bajo $f$ como la sucesión 
-\[
-x,f(x),f^{2}(x),f^{3}(x),\ldots,f^{k}(x),\ldots
-\]
-algunas veces llamadas ecuaciones de recurrencia, puesto que su valor
-al tiempo $n+1$ está en función de su valor en el tiempo $n$. El
-objetivo es determinar el comportamiento de la órbita de cualquier
-punto bajo la correspondiente función. En este capítulo exploraremos
-sistemáticamente la teoría elemental de sistemas dinámicos discretos
-complejos, es decir, donde $f$ es un función compleja.
-
+denotamos por $f^{k}$  donde
+$f^{k+1}=f\circ f^{k}.$
+Ademas $f^{1}=f$ y $f^{0}=id.$ La  órbita de $x$ bajo $f$ como la sucesión 
+$x,f(x),f^{2}(x),f^{3}(x),\ldots,f^{k}(x),\ldots$
 
 Dado un punto periódico $z_{0}$ con periodo $k,$ se define el número
-$\lambda$, llamado el\emph{ valor propio}, el \emph{multiplicador}
-o el \emph{eigenvalor} de la órbita periódica $z_{0}$
+$\lambda$, llamado el valor propio o el multiplicador
 \[
 \lambda=\begin{cases}
-\left(f^{k}\right)'(z_{0}) & \mbox{si}\ z_{0}\neq\infty\\
-\frac{1}{\left(f^{k}\right)'(z_{0})} & \mbox{si}\ z_{0}=\infty
+\left(f^{k}\right)'(z_{0})=\prod_{i=0}^{k-1}f'\left(z_{i}\right) & \mbox{si}\ z_{0}\neq\infty\\
+\frac{1}{\left(f^{k}\right)'(z_{0})} & \mbox{si}\ z_{0}=\infty.
 \end{cases}
 \]
-donde por regla de la cadena 
-\begin{align*}
-\left(f^{k}\right)'(z_{0}) & =f'(z_{0})f'(z_{1})\ldots f'(z_{k-1})\\
- & =\prod_{i=0}^{k-1}f'\left(z_{i}\right)=\prod_{i=0}^{k-1}f'(f^{i}(z_{0}))
-\end{align*}
-y $z_{i}\in\set{z_{0},z_{1},\ \ldots,\ z_{k-1}}$. Esto es, $\lambda$
-es el producto de las derivadas de $f$ a lo largo de la órbita, por
-lo tanto, no depende del punto elegido en la órbita, sino de toda
-la órbita.
+ 
 
 $z_{0}$ es un punto fijo de $f$ si verifica la ecuación
-\begin{equation}
-f(z_{0})=z_{0}.\label{eq:fijo}
-\end{equation}
-Un punto fijo $z$ de $f$, es periódica, de periodo 1, en efecto
-se tiene de (\ref{eq:fijo}) que $f^{n}(z_{0})=z_{0}$, $n\in\N$.
-$z_{0}$ es un punto critico de $f$ si verifica la ecuación $f'(z_{0})=0$.
+$f(z_{0})=z_{0}.$
+Un punto fijo $z$ de $f$, es periódica, de periodo 1.
 
-
-
-
-
-Puntos fijos atractores y repulsores 
 
 ##  Conjuntos de Fatou y Julia $\mathcal{K}$, $\mathcal{J}$ y $\mathcal{F}$ 
 

@@ -49,4 +49,6 @@ de Julia es un subconjunto propio del conjunto lleno de Julia y si este no perte
 `r w5`
 
 ![](gif1.gif){width=200}
+
+
 -->

@@ -47,29 +47,19 @@ biblio-style: apalike
 
 ## Topología de los números complejos                      
 ### Espacio métrico
-De acuerdo a [@Barnsley] un espacio métrico es un par $(X,d)$,
-donde $X$ es un conjunto no vacío de elementos a los que llamaremos
-puntos y $d$ es una función de $X\times X$ en ${R}$ que
-cumple los siguientes axiomas:
+[@Barnsley]  $(X,d)$, espacio métrico
 
 * $d(a,b)\geq0$.
 * $d(a,b)=0\Longleftrightarrow a=b$.
 * $d(a,b)=d(b,a)$ (axioma de simetría).
-* $d(a,b)\leq d(a,c)+d(c,b)$ (desigualdad triangular)Para todo $a,b$ 
+* $d(a,b)\leq d(a,c)+d(c,b)$ (desigualdad triangular)
+
+Para todo $a,b$ 
 y $c$ en $X$.  
 
 
-La función $d$ se llama distancia o métrica en $X.$
-
-Un ejemplo clásico de espacio métrico es el conjunto de los números
-complejos y la distancia usual dada por el módulo de un número complejo.
-De acuerdo a [@articlechurchil] se tiene que 
+[@articlechurchil] se tiene que $\CC$
 $$d(z,w)=\sqrt{\cc{x_{1}-x_{2}}^{2}+\cc{y_{1}-y_{2}}^{2}},$$
-donde los números complejos son $z=x_{1}+iy_{1}$ y $w=x_{2}+iy_{2}$.
-La teoría de los espacios métricos surge con el objetivo de generalizar
-los espacios euclidianos, permitiendo extender ideas a otros tipos
-de conjuntos. El siguiente ejemplo muestra como verificar los axiomas
-sobre un supuesto espacio métrico.
 
            
 ### Conjuntos compactos 
@@ -87,31 +77,22 @@ vacíos, de modo que $X\subset U\cup V$, se tiene $U\cap V\neq\emptyset$.
 En otras palabras, $X$ no puede ser cubierto por dos conjuntos abiertos
 disjuntos.
  
-#### Conexidad por trayectorias   
+1. Conexidad por trayectorias   
  
-#### Conjuntos convexos       
+2. Conjuntos convexos       
  
-#### Componentes conexas      
+3. Componentes conexas      
  
 ### Sucesiones             
 
 Una sucesión en un conjunto $X$ es una función de los naturales en
 $X$. Designamos por $x_{n}$ al $n$ – ésimo término de la sucesión
 es decir, a la imagen de $n$ a través de la función $\set{x_{n}}_{n\in\mathbb{N}}$.
-El campo de variabilidad de la sucesión $\set{x_{n}}$ es 
-\[
-\set{y\in X:\exists n\in\mathbb{N}:x_{n}=y},
-\]
-es decir, el conjunto de valores que toma la sucesión. Una sucesión
-se dice acotada si su campo de variabilidad es un conjunto acotado. 
 
 Decimos que una sucesión $\set{x_{n}}$ en un espacio métrico $({X,d})$
 es convergente en $X$ si existe un punto $p\in X$ con la propiedad
 de que $\forall\epsilon\geq0,$ $\exists N\in\mathbb{N}:\forall n\geq N,$
-$d(p,x_{n})<\epsilon$. En ese caso, decimos que la sucesión converge
-hacia $p,$ o que $p$ es el limite de $\set{x_{n}},$ y escribimos
-$\lim_{n\rightarrow\infty}x_{n}=p.$ Observemos que decir que $\lim_{n\rightarrow\infty}x_{n}=p$
-es equivalente a decir que $\lim_{n\rightarrow\infty}d(x_{n},p)=0.$
+$d(p,x_{n})<\epsilon$. 
 
 
 ### El plano extendido complejo    
@@ -134,27 +115,16 @@ $$S=\set{(x,y,z)\in {\mathbb{R}^{3}}; x^{2}+y^{2}+z^{2}=1}.$$
 Sea $(X,d)$ un espacio métrico completo. Entonces $\mathfrak{H}(X)$
 denota el espacio cuyos puntos son los subconjuntos compactos no vacíos
 de $X.$
-
-Sea $(X,d)$ un espacio métrico completo, $x\in X$, $A$ y $B\in\mathfrak{H}(X)$.
-Se define 
+Sea $x\in X$, $A$ y $B\in\mathfrak{H}(X)$.
 \[
 d(x,B)=\min\set{d(x,y):y\in B}.
 \]
-$d(x,B)$ es la distancia desde el punto $x$ al conjunto $B$. 
-
-además
 \[
 d(A,B)=\max\set{d(x,B):x\in A}.
 \]
-
-La distancia de
-Hausdorff entre los puntos $A$ y $B\in\mathfrak{H}(X)$ se define
-por 
 \[
 h(A,B)=d(A,B)\vee d(B,A).
 \]
-Refiérase a la Figura \@ref(fig:ww)
-
 ```{r ww, echo=FALSE, include=TRUE, fig.align="center",fig.cap="Distancia de Housdorff", out.width ='50%'}
 knitr::include_graphics("ww.png")
 ```
@@ -221,5 +191,6 @@ es decir, tal que
 \]
 Las transformaciones $f$ y $g$ se pueden considerar como las mismas
 transformaciones visto en diferentes sistemas de coordenadas
+
 
 \@ref(we) \@ref(ww) \@ref(www)
