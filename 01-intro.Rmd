@@ -1,21 +1,115 @@
-# Introduction {#intro}
+---
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+# Dinamica discreta compleja {#ww}
+\@ref(we) \@ref(ww) \@ref(www)
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+## Iteración de funciones complejas
+
+Sea $f$ : $X\rightarrow X$ una función continua en un espacio métrico
+$X$. Para $k\in\N$, la $k$ – ésima iteración de $f$ se define
+como la composición reiterada de $f$ consigo misma $k$ veces y la
+denotamos por $f^{k}$ Por ejemplo, $f^{2}=f\circ f,f^{3}=f\circ f\circ f$
+y en general 
+\[
+f^{k+1}=f\circ f^{k}.
+\]
+Se entiende que $f^{1}=f$ y definimos $f^{0}=id.$ Para $x\in X$
+definimos la órbita de $x$ bajo $f$ como la sucesión 
+\[
+x,f(x),f^{2}(x),f^{3}(x),\ldots,f^{k}(x),\ldots
+\]
+algunas veces llamadas ecuaciones de recurrencia, puesto que su valor
+al tiempo $n+1$ está en función de su valor en el tiempo $n$. El
+objetivo es determinar el comportamiento de la órbita de cualquier
+punto bajo la correspondiente función. En este capítulo exploraremos
+sistemáticamente la teoría elemental de sistemas dinámicos discretos
+complejos, es decir, donde $f$ es un función compleja.
+
+
+Dado un punto periódico $z_{0}$ con periodo $k,$ se define el número
+$\lambda$, llamado el\emph{ valor propio}, el \emph{multiplicador}
+o el \emph{eigenvalor} de la órbita periódica $z_{0}$
+\[
+\lambda=\begin{cases}
+\left(f^{k}\right)'(z_{0}) & \mbox{si}\ z_{0}\neq\infty\\
+\frac{1}{\left(f^{k}\right)'(z_{0})} & \mbox{si}\ z_{0}=\infty
+\end{cases}
+\]
+donde por regla de la cadena 
+\begin{align*}
+\left(f^{k}\right)'(z_{0}) & =f'(z_{0})f'(z_{1})\ldots f'(z_{k-1})\\
+ & =\prod_{i=0}^{k-1}f'\left(z_{i}\right)=\prod_{i=0}^{k-1}f'(f^{i}(z_{0}))
+\end{align*}
+y $z_{i}\in\set{z_{0},z_{1},\ \ldots,\ z_{k-1}}$. Esto es, $\lambda$
+es el producto de las derivadas de $f$ a lo largo de la órbita, por
+lo tanto, no depende del punto elegido en la órbita, sino de toda
+la órbita.
+
+$z_{0}$ es un punto fijo de $f$ si verifica la ecuación
+\begin{equation}
+f(z_{0})=z_{0}.\label{eq:fijo}
+\end{equation}
+Un punto fijo $z$ de $f$, es periódica, de periodo 1, en efecto
+se tiene de (\ref{eq:fijo}) que $f^{n}(z_{0})=z_{0}$, $n\in\N$.
+$z_{0}$ es un punto critico de $f$ si verifica la ecuación $f'(z_{0})=0$.
+
+
+
+
+
+Puntos fijos atractores y repulsores 
+
+##  Conjuntos de Fatou y Julia $\mathcal{K}$, $\mathcal{J}$ y $\mathcal{F}$ 
+
+
+El conjunto lleno de Julia asociado a
+una función $f,$ lo cual se denota como $\K=\K\cc{f}$ es aquel conjunto
+de todos los $z\in\CC_\infty$, para los cuales la secuencia definida por
+inducción por $z_{0}=z,z_{n+1}=f\left(z_{n}\right)$, a la que llamaremos
+órbita positiva de $z,$ no converge a infinito; y el conjunto de
+Julia es la frontera del conjunto lleno de Julia es decir $\J=\partial\K$.
+
+
+El conjunto de Fatou, asociado a una función
+$f,$ lo cual se denota como $\F=\F\cc{f}$ es aquel conjunto de todos
+los $z\in\CC_\infty$, para los cuales la secuencia definida por inducción
+por $z_{0}=z,z_{n+1}=f\left(z_{n}\right)$, forma una familia normal,
+es decir $f^{n}$ es normal, de esto 
+
+
+
+
+
+
+##  Plano de parámetros generado por $Q_{p,c}=z ^p+c$ 
+
+Es un conjunto de puntos llamados \emph{parámetros},
+definida por una función compleja $f$, que contiene un parámetro
+$c$, es decir $f_{c}\cc{z}$, es decir
+\[
+\mathcal{Q}:=\set{c\in\mathbb{C}:\set{f_{c}^{m}(0)}_{m=1}^{\infty}\text{ es acotada}}
+\]
+de manera que este conjunto, divide al \emph{plano de parámetros}
+en dos conjuntos complementarios $\mathcal{Q}$ y $\CC_{\infty}\setminus\mathcal{Q}$.
+
+
+
+
+
+
+
+##  Plano dinámico generado por $Q_{p,c}=z ^p+c$
+
+Este plano esta estructurado con los conjuntos de Julia cuyas propiedades dependen de la ubicación del parámetro c en relación a los conjuntos acotados en ellos, mencionado en la definición del plano de parámetros.
+
+
+
