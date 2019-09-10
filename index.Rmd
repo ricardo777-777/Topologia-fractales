@@ -5,7 +5,8 @@ author: "MALLQUI BAÑOS Ricardo Michel"
 date: "`r Sys.Date()`"
 output:
   pdf_document: default
-  html_document: default
+  html_document:
+    css: style.css
   word_document: default
 description: This is a minimal example of using the bookdown package to write a book.
   The output format for this example is bookdown::gitbook.

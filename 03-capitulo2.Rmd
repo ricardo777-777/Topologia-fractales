@@ -26,7 +26,7 @@ de Julia es un subconjunto propio del conjunto lleno de Julia y si este no perte
 ```
 ## Hipótesis 1
 `r w1`
-<!--- 
+<e!--- 
 [Canvas](http://www.malinc.se/m/JuliaSets.php)
 ![](gif1.gif){width=500}
 

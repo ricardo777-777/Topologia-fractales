@@ -1,6 +1,6 @@
 p.caption {
   color: #777;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 p code {
   white-space: inherit;
@@ -12,3 +12,17 @@ pre {
 pre code {
   white-space: inherit;
 }
+/* Whole document: */
+body{
+  font-family: Helvetica;
+  font-size: 12pt;
+}
+/* Headers */
+h1,h2,h3,h4,h5,h6{
+  font-size: 12pt;
+}
+.book .book-body .page-wrapper .page-inner section.normal h1{font-size:1em}
+.book .book-body .page-wrapper .page-inner section.normal h2{font-size:1em}
+.book .book-body .page-wrapper .page-inner section.normal h3{font-size:1em}
+.book .book-body .page-wrapper .page-inner section.normal h4{font-size:1em}
+.book .book-body .page-wrapper .page-inner section.normal h5{font-size:1em}
