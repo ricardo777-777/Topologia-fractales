@@ -44,8 +44,6 @@ biblio-style: apalike
 \newcommand{\F}{\mathcal{F}}
 # Preliminares {#we}
 
-\@ref(we) \@ref(ww) \@ref(www)
-
 ## Topología de los números complejos                      
 ### Espacio métrico
 [@Barnsley]  $(X,d)$, espacio métrico
@@ -61,9 +59,9 @@ y $c$ en $X$.
 
 [@articlechurchil] se tiene que $\CC$
 $$d(z,w)=\sqrt{\cc{x_{1}-x_{2}}^{2}+\cc{y_{1}-y_{2}}^{2}},$$
-
+[<img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'>](#conjunto)
            
-### Conjuntos compactos 
+### Conjuntos compactos {#conjunto}
  
 Sea $A$ subconjunto de un espacio métrico $X$, decimos que $A$
 es compacto si para cada cubierta abierta $\mathcal{C}$ de $A$ existe
@@ -129,8 +127,9 @@ h(A,B)=d(A,B)\vee d(B,A).
 ```{r ww, echo=FALSE, include=TRUE, fig.align="center",fig.cap="Distancia de Housdorff", out.width ='50%'}
 knitr::include_graphics("ww.png")
 ```
+[<img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'>](#compleja)
 
-## Trasformaciones de variable compleja  
+## Trasformaciones de variable compleja  {#compleja}
  
 ### Transformación de Möbius           
  
@@ -147,10 +146,10 @@ la ecuación $T(z)=w$ tiene una única solución
 z=T^{-1}(w)=\frac{dw-b}{-cw+a}
 \]
 luego $T^{-1}$ sigue siendo una transformación del mismo tipo.
+[<img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'>](#holomorfa)
 
 
-
-### Transformaciones holomorfas y analíticas  
+### Transformaciones holomorfas y analíticas  {#holomorfa}
  
  Dado un dominio $\Omega$ y $f:\Omega\rightarrow\mathbb{C}$
 una función, decimos que $f$ es holomorfa en $z_{0}\in\Omega$ si
@@ -164,8 +163,9 @@ y $z+h\in\Omega$). Si el limite existe, entonces decimos que la derivada
 \[
 f'(z_{0})=\lim_{h\rightarrow\infty}\frac{f(z_{0}+h)-f(z_{0})}{h}.
 \]
+[<img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'>](#conforme)
 
-### Transformaciones conformes      
+### Transformaciones conformes {#conforme}     
  
  Una transformación conforme es una función $f:A\rightarrow\mathbb{C},$
 diferenciable en ${z_{0}\in A\subset\mathbb{C}},$ que preserva el
@@ -177,10 +177,10 @@ en $z_{0}$ cuando se verifica
 \arg\left[\frac{\left(f\circ\alpha\right)'(z_{0})}{\left(f\circ\beta\right)'(z_{0})}\right]=\arg\left(\frac{\alpha'(z_{0})}{\beta'(z_{0})}\right),
 \]
 siempre y cuando $\alpha'(z_{0})$ y ${\beta'(z_{0})\,}$ sean vectores
-tangentes no nulos. 
+tangentes no nulos. [<img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'>](#conjugac)
 
 
-### Conjugación analítica                          
+### Conjugación analítica  {#conjugac}                        
 
 Sean $f$ y $g$ transformaciones complejas, de acuerdo a [@Carleson]:
 Decimos que una función $f$ : $U\rightarrow U$ es conformalmente
@@ -191,7 +191,5 @@ es decir, tal que
 \varphi(f(z))=g(\varphi(z))
 \]
 Las transformaciones $f$ y $g$ se pueden considerar como las mismas
-transformaciones visto en diferentes sistemas de coordenadas
+transformaciones visto en diferentes sistemas de coordenadas [C2](#ww)
 
-
-\@ref(we) \@ref(ww) \@ref(www)
