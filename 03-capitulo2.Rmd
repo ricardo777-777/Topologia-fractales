@@ -24,34 +24,4 @@ w5<-"Si un parámetro $c$ pertenece al conjunto Multibrots, entonces el conjunto
 de Julia es un subconjunto propio del conjunto lleno de Julia y si este no pertenece al conjunto de Multibrots, el conjunto de Julia es igual al conjunto lleno de Julia"
 ```
 
-## Hipótesis 1
-`r w1`: <span style="color:red">$$c\in \mathcal{M}^p\Longleftrightarrow \mathcal{J}_c^p \text{ es conexa}$$ </span>
-
-
-
-
-![](gif1.gif){width=450}
-
-[<img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'>](#plano2)
-
-## Hipótesis 2
-`r w2`: <span style="color:red"> $\forall r>0$, $$\lim_{k\to\infty}\left[\rho_{k}^{-1}\left(\mathcal{J}_{c_{0}}^{p}-c_{0}\right)\right]_r\rightarrow\left[\mathcal{J}'\right]\leftarrow \lim_{k\to\infty} \left[q\rho_{k}^{-1}\left(\mathcal{M}^{p}-c_{0}\right)\right]_r$$ con la topología de Hausdorff.  </span> 
-
-![](gif3.gif){width=350}![](giff3.gif){width=350}
-
-## Hipótesis 3
-`r w3`: <span style="color:red">$$c\in \mathcal{H}_1^p\Longleftrightarrow \mathcal{J}_c^p \text{ es una curva de Jordan}$$ </span>
-
-![](gif2.gif){width=600}
-
-## Hipótesis 4
-`r w4`: <span style="color:red">$c\in \mathcal{M}^p$  tal que  $\left(f^{k}\right)'(c)=0$  entonces $\exists z\in\mathcal{K}$  tal que $f^{n+k}(z)=f^{n}(z)$, $\forall n>N$</span>
-
-![](gif77.gif){width=500}
-
-## Hipótesis 5
-`r w5`: <span style="color:red">$$c\in \mathcal{M}^p\Longrightarrow\mathcal{J}_c^p\subset\mathcal{K}_c^p$$  $$c\notin \mathcal{M}^p\Longrightarrow\mathcal{J}_c^p=\mathcal{K}_c^p$$ </span>
-
-![](gif6.gif){width=600}
-
 

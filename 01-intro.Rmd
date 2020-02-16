@@ -53,7 +53,6 @@ El **conjunto de Fatou**, asociado a $f,$ lo cual se denota como $\mathcal{F}=\m
 los $z\in\mathbb{C}_\infty$, para los cuales la secuencia definida por inducción
 por $z_{0}=z,z_{n+1}=f\left(z_{n}\right)$, **no converge a infinito**  [<img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'>](#plano1)
 
-![](w7w.gif){width=280}![](gif77.gif){width=380}
 
 
 
@@ -73,7 +72,6 @@ de manera que este conjunto, divide al plano de parámetros ($\mathcal{C}_\infty
 en dos conjuntos complementarios $\mathcal{Q}$ y $\mathbb{C}_{\infty}\setminus\mathcal{Q}$.
 [<img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'>](#plano2)
 
-![](w7w.gif){width=300}
 
 
 
@@ -81,4 +79,4 @@ en dos conjuntos complementarios $\mathcal{Q}$ y $\mathbb{C}_{\infty}\setminus\m
 ##  Plano dinámico generado por $Q_{p,c}=z ^p+c$ ($\mathcal{C}_\infty$) {#plano2}
 Este plano esta estructurado con los **conjuntos de Julia** cuyas propiedades dependen de la **ubicación del parámetro c** en relación a los conjuntos Multibrot, mencionado en la definición del plano de parámetros. [C3](#www)
 
-![](gif77.gif){width=500}
+

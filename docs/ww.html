@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 2 Dinamica discreta compleja | Relaciones topológicas entre los conjuntos Multibrots y de Julia generados por el polinomio {z^p+c}</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 2 Dinamica discreta compleja | Relaciones topológicas entre los conjuntos Multibrots y de Julia generados por el polinomio {z^p+c}" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 2 Dinamica discreta compleja | Relaciones topológicas entre los conjuntos Multibrots y de Julia generados por el polinomio {z^p+c}" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="MALLQUI BAÑOS Ricardo Michel" />
+
+
+<meta name="date" content="2020-02-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="www.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preliminares</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#topología-de-los-números-complejos"><i class="fa fa-check"></i><b>1.1</b> Topología de los números complejos</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#espacio-métrico"><i class="fa fa-check"></i><b>1.1.1</b> Espacio métrico</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#conjunto"><i class="fa fa-check"></i><b>1.1.2</b> Conjuntos compactos</a></li>
+<li class="chapter" data-level="1.1.3" data-path="index.html"><a href="index.html#conjuntos-conexos"><i class="fa fa-check"></i><b>1.1.3</b> Conjuntos conexos</a></li>
+<li class="chapter" data-level="1.1.4" data-path="index.html"><a href="index.html#sucesiones"><i class="fa fa-check"></i><b>1.1.4</b> Sucesiones</a></li>
+<li class="chapter" data-level="1.1.5" data-path="index.html"><a href="index.html#el-plano-extendido-complejo"><i class="fa fa-check"></i><b>1.1.5</b> El plano extendido complejo</a></li>
+<li class="chapter" data-level="1.1.6" data-path="index.html"><a href="index.html#topología-de-hausdorff"><i class="fa fa-check"></i><b>1.1.6</b> Topología de Hausdorff</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#compleja"><i class="fa fa-check"></i><b>1.2</b> Trasformaciones de variable compleja</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#transformación-de-möbius"><i class="fa fa-check"></i><b>1.2.1</b> Transformación de Möbius</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#holomorfa"><i class="fa fa-check"></i><b>1.2.2</b> Transformaciones holomorfas y analíticas</a></li>
+<li class="chapter" data-level="1.2.3" data-path="index.html"><a href="index.html#conforme"><i class="fa fa-check"></i><b>1.2.3</b> Transformaciones conformes</a></li>
+<li class="chapter" data-level="1.2.4" data-path="index.html"><a href="index.html#conjugac"><i class="fa fa-check"></i><b>1.2.4</b> Conjugación analítica</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ww.html"><a href="ww.html"><i class="fa fa-check"></i><b>2</b> Dinamica discreta compleja</a><ul>
+<li class="chapter" data-level="2.1" data-path="ww.html"><a href="ww.html#iteración-de-funciones-complejas"><i class="fa fa-check"></i><b>2.1</b> Iteración de funciones complejas</a></li>
+<li class="chapter" data-level="2.2" data-path="ww.html"><a href="ww.html#fatou"><i class="fa fa-check"></i><b>2.2</b> Conjuntos de Fatou y Julia <span class="math inline">\(\mathcal{K}\)</span>, <span class="math inline">\(\mathcal{J}\)</span> y <span class="math inline">\(\mathcal{F}\)</span></a></li>
+<li class="chapter" data-level="2.3" data-path="ww.html"><a href="ww.html#plano1"><i class="fa fa-check"></i><b>2.3</b> Plano de parámetros generado por <span class="math inline">\(Q_{p,c}=z ^p+c\)</span></a></li>
+<li class="chapter" data-level="2.4" data-path="ww.html"><a href="ww.html#plano2"><i class="fa fa-check"></i><b>2.4</b> Plano dinámico generado por <span class="math inline">\(Q_{p,c}=z ^p+c\)</span> (<span class="math inline">\(\mathcal{C}_\infty\)</span>)</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="www.html"><a href="www.html"><i class="fa fa-check"></i><b>3</b> Relaciones topólogicas entre los conjuntos Multibrot y Julia</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Relaciones topológicas entre los conjuntos Multibrots y de Julia generados por el polinomio <span class="math inline">\({z^p+c}\)</span></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ww" class="section level1">
+<h1><span class="header-section-number">Capítulo 2</span> Dinamica discreta compleja</h1>
+<div id="iteración-de-funciones-complejas" class="section level2">
+<h2><span class="header-section-number">2.1</span> Iteración de funciones complejas</h2>
+<p>Se define
+como la <strong>composición reiterada</strong> de <span class="math inline">\(f\)</span> consigo misma <span class="math inline">\(k\)</span> veces y la
+denotamos por <span class="math inline">\(f^{k}\)</span> donde
+<span class="math inline">\(f^{k+1}=f\circ f^{k}.\)</span>
+Ademas <span class="math inline">\(f^{1}=f\)</span> y <span class="math inline">\(f^{0}=id.\)</span> La órbita de <span class="math inline">\(x\)</span> bajo <span class="math inline">\(f\)</span> como la <strong>sucesión</strong>
+<span class="math inline">\(x,f(x),f^{2}(x),f^{3}(x),\ldots,f^{k}(x),\ldots\)</span></p>
+<p>Dado un punto periódico <span class="math inline">\(z_{0}\)</span> con periodo <span class="math inline">\(k,\)</span> se define el número
+<strong><span class="math inline">\(\lambda\)</span></strong>, llamado el <strong>valor propio</strong> o <strong>el multiplicador</strong>
+<span class="math display">\[
+\lambda=\begin{cases}
+\left(f^{k}\right)&#39;(z_{0})=\prod_{i=0}^{k-1}f&#39;\left(z_{i}\right) &amp; \mbox{si}\ z_{0}\neq\infty\\
+\frac{1}{\left(f^{k}\right)&#39;(z_{0})} &amp; \mbox{si}\ z_{0}=\infty.
+\end{cases}
+\]</span></p>
+<p><span class="math inline">\(z_{0}\)</span> es un <strong>punto fijo</strong> de <span class="math inline">\(f\)</span> si verifica la ecuación
+<strong><span class="math inline">\(f(z_{0})=z_{0}.\)</span></strong>
+Un punto fijo <span class="math inline">\(z\)</span> de <span class="math inline">\(f\)</span>, es periódica, de periodo 1.</p>
+<ul>
+<li><p>Puntos eventualemente periódicos</p></li>
+<li><p>Puntos eventualmente periódico-repelentes</p></li>
+<li><p>Cuencas superactractoras (inmediata)
+<a href="ww.html#fatou"><img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'></a></p></li>
+</ul>
+</div>
+<div id="fatou" class="section level2">
+<h2><span class="header-section-number">2.2</span> Conjuntos de Fatou y Julia <span class="math inline">\(\mathcal{K}\)</span>, <span class="math inline">\(\mathcal{J}\)</span> y <span class="math inline">\(\mathcal{F}\)</span></h2>
+<p>El <strong>conjunto lleno de Julia</strong> asociado a
+una función <span class="math inline">\(f\)</span>: <span class="math inline">\(\mathcal{k}=\mathcal{K}(f)\)</span> esta formado por <span class="math inline">\(z\in\mathbb{C}_\infty\)</span>, donde la secuencia definida <span class="math inline">\(z_{0}=z,z_{n+1}=f\left(z_{n}\right)\)</span>,
+(órbita positiva) de <span class="math inline">\(z,\)</span> <strong>no converge a infinito</strong>; y el <strong>conjunto de
+Julia</strong> es la frontera del <strong>conjunto lleno de Julia</strong> es decir <span class="math inline">\(\mathcal{J}=\partial\mathcal{K}\)</span>.</p>
+<p>El <strong>conjunto de Fatou</strong>, asociado a <span class="math inline">\(f,\)</span> lo cual se denota como <span class="math inline">\(\mathcal{F}=\mathcal{F}(F)\)</span> es aquel conjunto de todos
+los <span class="math inline">\(z\in\mathbb{C}_\infty\)</span>, para los cuales la secuencia definida por inducción
+por <span class="math inline">\(z_{0}=z,z_{n+1}=f\left(z_{n}\right)\)</span>, <strong>no converge a infinito</strong> <a href="ww.html#plano1"><img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'></a></p>
+</div>
+<div id="plano1" class="section level2">
+<h2><span class="header-section-number">2.3</span> Plano de parámetros generado por <span class="math inline">\(Q_{p,c}=z ^p+c\)</span></h2>
+<p>Es un conjunto de puntos llamados <strong>parámetros</strong>,
+definida por una función compleja <span class="math inline">\(f\)</span>, que contiene un parámetro
+<span class="math inline">\(c\)</span>, es decir <span class="math inline">\(f_{c}(z)\)</span>, donde viven los conjuntos acotados (Multibrots)
+<span class="math display">\[
+\mathcal{Q}:=\left\{c\in\mathbb{C}:\left\{f_{c}^{m}(0)\right\}_{m=1}^{\infty}\text{ es acotada}\right\}
+\]</span>
+<span class="math display">\[
+\mathcal{M}^p:=\left\{c\in\mathbb{C}:\left\{Q_{c,p}^{m}(0)\right\}_{m=1}^{\infty}\text{ es acotada}\right\}
+\]</span>
+de manera que este conjunto, divide al plano de parámetros (<span class="math inline">\(\mathcal{C}_\infty\)</span>)
+en dos conjuntos complementarios <span class="math inline">\(\mathcal{Q}\)</span> y <span class="math inline">\(\mathbb{C}_{\infty}\setminus\mathcal{Q}\)</span>.
+<a href="ww.html#plano2"><img src="ff.png" alt='fa-edit' style='display:inline-block;height: 1em;margin-bottom:0'></a></p>
+</div>
+<div id="plano2" class="section level2">
+<h2><span class="header-section-number">2.4</span> Plano dinámico generado por <span class="math inline">\(Q_{p,c}=z ^p+c\)</span> (<span class="math inline">\(\mathcal{C}_\infty\)</span>)</h2>
+<p>Este plano esta estructurado con los <strong>conjuntos de Julia</strong> cuyas propiedades dependen de la <strong>ubicación del parámetro c</strong> en relación a los conjuntos Multibrot, mencionado en la definición del plano de parámetros. <a href="www.html#www">C3</a></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="www.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "serif",
+"size": 3
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown.pdf", "bookdown.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
